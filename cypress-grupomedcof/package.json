@@ -1,0 +1,23 @@
+{
+  "name": "cypress-grupomedcof",
+  "version": "1.0.0",
+  "description": "Projeto De Testes",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "cypress run --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "test:allure": "npm run e2e && npm run report:allure"
+  },
+  "keywords": [
+    "Cypress"
+  ],
+  "author": "Eduardo Andrade Florencio",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "cypress": "^12.14.0",
+    "faker-br": "^0.4.1",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
